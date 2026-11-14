@@ -1,0 +1,98 @@
+[
+  {
+    "_id": {
+      "$oid": "65a000000000000000000001"
+    },
+    "name": "Dr. Rajesh Sharma",
+    "email": "rajeshadmin@gmail.com",
+    "passwordHash": "$2b$10$cfuLdfS8CMaIFLVkGnQhvuIo8erF7.lbP1jtuBRmfsdERlyxIv1T2",
+    "role": "admin",
+    "status": "active",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a000000000000000000002"
+    },
+    "name": "Prof. Meera Iyer",
+    "email": "meeraadmin@gmail.com",
+    "passwordHash": "$2b$10$y6Cq9KExe7uwWOb/OutVQudB9CKU6TZq6rr5g/jxe7.x2v3X1gbPu",
+    "role": "admin",
+    "status": "active",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a000000000000000000003"
+    },
+    "name": "Arjun Mehta",
+    "email": "arjun@college.edu",
+    "passwordHash": "$2b$10$9L30HvwjG8SZ5yIOaNn02.vNeMJQBD6XDChciqkof6RZAKc7C2zqC",
+    "role": "student",
+    "status": "active",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a000000000000000000004"
+    },
+    "name": "Sneha Roy",
+    "email": "sneha@college.edu",
+    "passwordHash": "$2b$10$0rAhqNC5kN1jslTWFoVnXOn0ebNQOh0RZ6N7qNRfG4LRwKByvpBHu",
+    "role": "student",
+    "status": "active",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a000000000000000000005"
+    },
+    "name": "Rahul Das",
+    "email": "rahul@college.edu",
+    "passwordHash": "$2b$10$lX/3O9h75O1AyhejB8TuAey0UWNVvYQ.jVLD2o./TC6k9iXbQgEji",
+    "role": "student",
+    "status": "active",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a000000000000000000006"
+    },
+    "name": "Riya Sen",
+    "email": "riya@college.edu",
+    "passwordHash": "$2b$10$g4N9bUobTCEq6k83XrBXAeatm9lQqhdbmCaOw3.ubGLwLUI0WYQcO",
+    "role": "student",
+    "status": "suspended",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  }
+]

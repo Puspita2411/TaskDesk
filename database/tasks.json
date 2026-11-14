@@ -1,0 +1,366 @@
+[
+  {
+    "_id": {
+      "$oid": "65b000000000000000000001"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000001"
+    },
+    "title": "Normalize the library schema to 3NF",
+    "description": "Convert the library tables up to third normal form.",
+    "priority": "high",
+    "status": "inprogress",
+    "dueDate": "2026-11-14",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000002"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000002"
+    },
+    "title": "Solve binary tree traversal set",
+    "description": "Inorder, preorder and postorder problems.",
+    "priority": "medium",
+    "status": "pending",
+    "dueDate": "2026-11-17",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000003"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000003"
+    },
+    "title": "Submit PHP session lab report",
+    "description": "Include screenshots of login and logout.",
+    "priority": "high",
+    "status": "pending",
+    "dueDate": "2026-11-11",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000004"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000004"
+    },
+    "title": "Read chapter on process scheduling",
+    "description": "",
+    "priority": "low",
+    "status": "pending",
+    "dueDate": "2026-11-20",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000005"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000001"
+    },
+    "title": "Prepare ER diagram for mini project",
+    "description": "",
+    "priority": "medium",
+    "status": "completed",
+    "dueDate": "2026-11-12",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "completedAt": {
+      "$date": "2026-11-13T23:55:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000006"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000005"
+    },
+    "title": "Renew hostel mess payment",
+    "description": "",
+    "priority": "high",
+    "status": "pending",
+    "dueDate": "2026-11-13",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000007"
+    },
+    "user": {
+      "$oid": "65a000000000000000000003"
+    },
+    "category": {
+      "$oid": "65c000000000000000000002"
+    },
+    "title": "Practice dynamic programming problems",
+    "description": "Knapsack and LCS.",
+    "priority": "medium",
+    "status": "inprogress",
+    "dueDate": "2026-11-16",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000008"
+    },
+    "user": {
+      "$oid": "65a000000000000000000004"
+    },
+    "category": {
+      "$oid": "65c000000000000000000001"
+    },
+    "title": "Write SQL joins practice queries",
+    "description": "",
+    "priority": "medium",
+    "status": "completed",
+    "dueDate": "2026-11-10",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "completedAt": {
+      "$date": "2026-11-13T23:55:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000009"
+    },
+    "user": {
+      "$oid": "65a000000000000000000004"
+    },
+    "category": {
+      "$oid": "65c000000000000000000002"
+    },
+    "title": "Implement linked list operations",
+    "description": "",
+    "priority": "high",
+    "status": "completed",
+    "dueDate": "2026-11-11",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "completedAt": {
+      "$date": "2026-11-13T23:55:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000a"
+    },
+    "user": {
+      "$oid": "65a000000000000000000004"
+    },
+    "category": {
+      "$oid": "65c000000000000000000003"
+    },
+    "title": "Build responsive portfolio page",
+    "description": "",
+    "priority": "medium",
+    "status": "inprogress",
+    "dueDate": "2026-11-15",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000b"
+    },
+    "user": {
+      "$oid": "65a000000000000000000004"
+    },
+    "category": {
+      "$oid": "65c000000000000000000004"
+    },
+    "title": "Memory management assignment",
+    "description": "",
+    "priority": "high",
+    "status": "pending",
+    "dueDate": "2026-11-12",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000c"
+    },
+    "user": {
+      "$oid": "65a000000000000000000004"
+    },
+    "category": {
+      "$oid": "65c000000000000000000005"
+    },
+    "title": "Book train ticket for semester break",
+    "description": "",
+    "priority": "low",
+    "status": "pending",
+    "dueDate": "2026-11-23",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000d"
+    },
+    "user": {
+      "$oid": "65a000000000000000000005"
+    },
+    "category": {
+      "$oid": "65c000000000000000000001"
+    },
+    "title": "DBMS viva preparation",
+    "description": "Transactions and indexing.",
+    "priority": "high",
+    "status": "pending",
+    "dueDate": "2026-11-15",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000e"
+    },
+    "user": {
+      "$oid": "65a000000000000000000005"
+    },
+    "category": {
+      "$oid": "65c000000000000000000002"
+    },
+    "title": "Graph traversal worksheet",
+    "description": "",
+    "priority": "medium",
+    "status": "inprogress",
+    "dueDate": "2026-11-18",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b00000000000000000000f"
+    },
+    "user": {
+      "$oid": "65a000000000000000000005"
+    },
+    "category": {
+      "$oid": "65c000000000000000000003"
+    },
+    "title": "CSS grid layout exercise",
+    "description": "",
+    "priority": "low",
+    "status": "completed",
+    "dueDate": "2026-11-09",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "completedAt": {
+      "$date": "2026-11-13T23:55:51.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65b000000000000000000010"
+    },
+    "user": {
+      "$oid": "65a000000000000000000005"
+    },
+    "category": {
+      "$oid": "65c000000000000000000005"
+    },
+    "title": "Gym membership renewal",
+    "description": "",
+    "priority": "low",
+    "status": "pending",
+    "dueDate": "2026-11-19",
+    "createdAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-13T18:25:51.000Z"
+    }
+  }
+]
