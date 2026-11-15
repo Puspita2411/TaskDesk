@@ -76,12 +76,9 @@ export function Login() {
           <input id="email" type="email" required autoComplete="email" placeholder="you@college.edu" value={v.email} onChange={set('email')} /></div>
         <div className="field"><label htmlFor="password">Password</label>
           <input id="password" type="password" required autoComplete="current-password" value={v.password} onChange={set('password')} /></div>
-        <div className="demo-bar">
-          <span>Demo accounts</span>
-          <span>
-            <button className="btn btn-xs" type="button" onClick={() => setV({ email: 'arjun@college.edu', password: 'arjun@123' })}>Student</button>{' '}
-            <button className="btn btn-xs" type="button" onClick={() => setV({ email: 'rajeshadmin@gmail.com', password: 'rajesh@123' })}>Admin</button>
-          </span>
+        <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+          <button className="btn btn-xs" type="button" onClick={() => setV({ email: 'arjun@college.edu', password: 'arjun@123' })}>Student</button>
+          <button className="btn btn-xs" type="button" onClick={() => setV({ email: 'rajeshadmin@gmail.com', password: 'rajesh@123' })}>Admin</button>
         </div>
         <button className="btn btn-primary btn-block" type="submit">Sign in</button>
         <p className="alt muted">New student? <Link to="/register">Create an account</Link></p>
@@ -93,11 +90,12 @@ export function Login() {
 export function Register() {
   const { signIn } = useAuth();
   const nav = useNavigate();
-  const [v, setV] = useState({ name: '', email: '', password: '', confirm: '' });
+  const [v, setV] = useState({ name: '', email: '', password: '', confirm: '', role: '' });
   const [err, setErr] = useState('');
   const set = (k) => (e) => setV({ ...v, [k]: e.target.value });
   const submit = async (e) => {
     e.preventDefault(); setErr('');
+    if (!v.role) return setErr('Please select whether you are signing up as an Admin or a Student.');
     if (v.password !== v.confirm) return setErr('The two passwords do not match.');
     try { const r = await api('/auth/register', { method: 'POST', body: v }); signIn(r); nav(homeFor(r.user), { replace: true }); }
     catch (x) { setErr(x.message); }
@@ -107,6 +105,14 @@ export function Register() {
       <form onSubmit={submit}>
         <div className="field-header"><h1>Create your account</h1><p className="muted">Set up your task list in under a minute.</p></div>
         {err && <div className="auth-error">{err}</div>}
+        <div className="field">
+          <label htmlFor="role">Sign up as</label>
+          <select id="role" required value={v.role} onChange={set('role')}>
+            <option value="" disabled>Select whether you are an Admin or a Student</option>
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
         <div className="field"><label htmlFor="name">Full name</label><input id="name" required autoComplete="name" placeholder="e.g. Arjun Mehta" value={v.name} onChange={set('name')} /></div>
         <div className="field"><label htmlFor="email">College email</label><input id="email" type="email" required autoComplete="email" placeholder="e.g. arjun@college.edu" value={v.email} onChange={set('email')} /></div>
         <div className="row2">

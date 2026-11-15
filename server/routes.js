@@ -24,18 +24,22 @@ const only = (role) => (req, res, next) =>
   req.user.role === role ? next() : bad(res, 'You do not have access to this area.', 403);
 r.param('id', (req, res, next, id) => (mongoose.isValidObjectId(id) ? next() : bad(res, 'Not found.', 404)));
 
-async function createStudent(b) {
+async function createUser(b, role = 'student') {
   const name = String(b.name || '').trim(), email = String(b.email || '').trim().toLowerCase(), pw = String(b.password || '');
   if (!name || name.length > 100) return { error: 'Enter the full name.' };
   if (!/^\S+@\S+\.\S+$/.test(email)) return { error: 'Enter a valid email address.' };
   if (pw.length < 8) return { error: 'Password must be at least 8 characters.' };
   if (await User.exists({ email })) return { error: 'An account with this email already exists.', code: 409 };
-  return { user: await User.create({ name, email, passwordHash: await bcrypt.hash(pw, 10), role: 'student' }) };
+  return { user: await User.create({ name, email, passwordHash: await bcrypt.hash(pw, 10), role }) };
 }
 
 // ---- auth ----
 r.post('/auth/register', async (req, res) => {
-  const out = await createStudent(req.body);           // public sign-up always creates a student
+  const role = req.body.role;
+  if (!role || !['admin', 'student'].includes(role)) {
+    return bad(res, 'Please select whether you are signing up as an Admin or a Student.');
+  }
+  const out = await createUser(req.body, role);
   if (out.error) return bad(res, out.error, out.code);
   res.status(201).json({ token: sign(out.user), user: pub(out.user) });
 });
@@ -108,7 +112,7 @@ r.get('/admin/students/:id', ...admin, async (req, res) => {
   res.json({ student: { ...pub(s), status: s.status, createdAt: s.createdAt }, tasks });
 });
 r.post('/admin/students', ...admin, async (req, res) => {
-  const out = await createStudent(req.body);
+  const out = await createUser(req.body, 'student');
   out.error ? bad(res, out.error, out.code) : res.status(201).json(pub(out.user));
 });
 r.patch('/admin/students/:id/toggle', ...admin, async (req, res) => {
